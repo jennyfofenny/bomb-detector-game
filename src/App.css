@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "DSEG Classic Mini Bold";
+  src: url("fonts/DSEG7ClassicMini-Bold.woff2") format("woff2"),
+       url("fonts/DSEG7ClassicMini-Bold.woff") format("woff"), 
+       url("fonts/DSEG7ClassicMini-Bold.ttf")  format("truetype");
+}
+
+body {
+  font-size: 16px;
+}
+
+.game {
+}
+
+.menu {
+  margin-bottom: 8px;
+}
+
+.menu > div {
+  display: flex;
+  padding: 6px;
+}
+
+.menu select, .menu button {
+  background-color: #c0c0c0;
+  border: 3px solid #fff;
+  border-right-color: #787878;
+  border-bottom-color: #787878;
+  padding: 3px 6px;
+}
+
+.board-options {
+  display: flex;
+  border-top: 2px #fff solid;
+}
+
+.menu .custom-border {
+  border-bottom: 2px #787878 solid;
+}
+
+.menu .new-game {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.board-options .option-col-1, .board-options .option-col-3 {
+  flex-shrink: 1;
+  padding-right: 0.5rem;
+}
+
+.board-options .option-col-2, .board-options .option-col-4 {
+  flex-grow: 1;
+}
+
+.board-options label {
+  font-size: 14px;
+}
+
+.board-options > div input {
+  width: 50px;
+}
+
+.board {
+  border: 4px #fff solid;
+  border-right-color: #787878;
+  border-bottom-color: #787878;
+  padding: 8px;
+  background-color: #c0c0c0;
+  display: inline-block;
+}
+
+.board-status, .board-body, .menu {
+  border: 4px #787878 solid;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.board-status {
+  margin-bottom: 8px;
+  display: flex;
+  padding: 6px;
+  justify-content: space-between;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-clock {
+  font: 32px "DSEG Classic Mini Bold";
+  background-color: #000;
+  color: #f00;
+  border: 2px #787878 solid;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  padding: 1px;
+}
+
+.board-cell, .board-face {
+  display: inline-block;
+  padding: 3px;
+  border: 2px #838383 solid;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.board-face {
+  width: 36px;
+  height: 36px;
+}
+
+.board-face.status.mousedown, .board-cell.hidden.mousedown, .menu select:active, .menu button:active {
+ border-color: #787878;
+ border-right-color: #fff;
+ border-bottom-color: #fff;
+ background-color: #acacac;
+}
+
+/*.board-row .board-cell:last-child:not(.hidden) {
+  padding-right: 2px;
+  border-right-width: 2px;
+}
+
+.board .board-row:last-child .board-cell:not(.hidden) {
+  padding-bottom: 2px;
+  border-bottom-width: 2px;
+}*/
+
+.board-cell img {
+  width: 16px;
+  height: 16px;
+  padding-top: 4px;
+}
+
+.board-cell.active {
+  background-color: #f00;
+}
+
+.board-face img {
+  width: 24px;
+  height: 24px;
+  padding-top: 6px;
+}
+
+.board-cell.hidden, .board-face.status {
+  border: 4px #fff solid;
+  border-right-color: #787878;
+  border-bottom-color: #787878;
+  padding: 0;
+}
