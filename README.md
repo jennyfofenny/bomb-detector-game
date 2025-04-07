@@ -2,8 +2,7 @@
 ### A Minesweeper™ clone
 <br />
 
-![Beginner game screenshot 1](public/screenshots/Beginner-1.PNG)
-![Beginner game screenshot 2](public/screenshots/Beginner-2.PNG)
+![Beginner game screen capture](public/screenshots/bomb-detector-game.gif)
 
 ### Tech Stack
 - React
