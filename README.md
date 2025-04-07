@@ -1,5 +1,5 @@
 # Bomb Detector Game
-### A minesweeper clone
+### A Minesweeper™ clone
 <br />
 
 ![Beginner game screenshot 1](public/screenshots/Beginner-1.PNG)
