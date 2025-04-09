@@ -14,3 +14,4 @@
 ### Setup
 1. Install dependencies `npm i`
 2. Run the vite app with `npm run dev`
+3. Open your browser of choice and go to `http://localhost:5173/`
